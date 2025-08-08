@@ -1,0 +1,220 @@
+/* Root & backgrounds */
+:root {
+  /* Figma Design colors */
+  --color-white: #fff;
+  --color-bg: var(--color-white);
+  --color-black: #000;
+  --color-green-main: #1ed760;
+  --color-title: #000;
+  --color-subtitle: #000;
+  --color-desktop-tablet: #000;
+  --color-grey-dark: #171717;
+  --color-free-bar-bg: #000;
+  --color-free-bar-text: #fff;
+  --figma-blue: #1abcfe;
+  --figma-green: #0acf83;
+  --figma-red: #ff7262;
+  --figma-orange: #f24e1e;
+  --figma-purple: #a259ff;
+
+  /* Shadows (for figma cards etc.) */
+  --figma-card-shadow: 0 66px 100px 0 #3a3a3a20;
+  --figma-card-radius: 12px;
+}
+
+/* Top-level container */
+.thumbnail-root {
+  width: 100vw;
+  min-height: 100vh;
+  background: var(--color-bg);
+  font-family: 'Inter', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: start;
+}
+
+.thumbnail-preview {
+  background: var(--color-bg);
+  border-radius: 12px;
+  margin: 40px auto 0 auto;
+  padding: 32px 48px;
+  box-shadow: var(--figma-card-shadow);
+  width: 90%;
+  max-width: 1700px;
+  min-height: 480px;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.thumbnail-topbar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.thumbnail-logo-bar {
+  display: flex;
+  align-items: center;
+}
+
+.thumbnail-logo-image {
+  margin-right: 18px;
+}
+.spotify-img-placeholder {
+  width: 64px;
+  height: 64px;
+  background: var(--color-green-main);
+  border-radius: 50%;
+  box-shadow: 0 0 18px 0 rgba(30, 215, 96, 0.25);
+}
+
+.thumbnail-logo-text .logo-main {
+  font-size: 4.1rem;
+  font-weight: 700;
+  color: var(--color-title);
+  letter-spacing: -0.02em;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.free-bar {
+  background: var(--color-free-bar-bg);
+  color: var(--color-free-bar-text);
+  border-radius: 32px;
+  padding: 8px 30px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  box-shadow: 0 4px 18px 0 #22292818;
+}
+
+.free-bar-text { color: var(--color-free-bar-text); }
+
+.thumbnail-header-group {
+  margin-top: 42px;
+  margin-bottom: 32px;
+}
+
+.thumbnail-title .main-title {
+  font-size: 7.6rem;
+  color: var(--color-title);
+  font-weight: 700;
+  font-family: 'Inter', Arial, sans-serif;
+  line-height: 1.18;
+  letter-spacing: -0.008em;
+}
+
+.thumbnail-subtitle .subtitle-text {
+  font-size: 4.0rem;
+  color: var(--color-subtitle);
+  font-weight: 700;
+  font-family: 'Inter', Arial, sans-serif;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+}
+
+.thumbnail-desktop-tablet .desktop-tablet-text {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: var(--color-desktop-tablet);
+  margin-top: 16px;
+}
+
+.recreated .recreated-by {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-grey-dark);
+  opacity: 0.9;
+  margin-top: 8px;
+}
+
+/* Figma Files */
+.thumbnail-figma-files {
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 36px 0 rgba(0,0,0,0.13);
+  padding: 0 18px;
+  min-height: 100px;
+}
+
+.figma-frame-bg {
+  background: #fff;
+  border-radius: 32px;
+  box-shadow: 0 8px 36px 0 rgba(0,0,0,0.05);
+  width: 104px;
+  height: 104px;
+  margin-right: 20px;
+}
+
+.figma-files-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.figma-logo-and-text {
+  display: flex;
+  align-items: center;
+}
+
+.figma-svg-icons {
+  margin-right: 24px;
+  width: 48px;
+  height: 48px;
+}
+
+.figma-files-plus {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-grey-dark);
+}
+
+/* BG decorative vector */
+.thumbnail-bg-vector {
+  position: absolute;
+  top: -60px;
+  right: 0;
+  width: 600px;
+  height: 300px;
+  background: linear-gradient(110deg, #1ed760 80%, rgba(30,215,96,0.13) 100%);
+  opacity: 0.18;
+  z-index: 1;
+  border-radius: 66px 300px 18px 111px;
+}
+
+/* Preview images/cards section — Placeholder for actual card/tracklist/playlist content */
+.thumbnail-preview-images {
+  margin: 48px auto 0 auto;
+  width: 90%;
+  min-height: 500px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 2;
+}
+.preview-images-placeholder {
+  flex: 1;
+  border-radius: 24px;
+  min-height: 260px;
+  min-width: 80vw;
+  background: var(--color-grey-dark, #222);
+  opacity: 0.05;
+}
+
+/* Responsive design */
+@media (max-width: 1000px) {
+  .thumbnail-preview,
+  .thumbnail-preview-images {
+    width: 98%;
+    padding: 16px 8px;
+  }
+  .main-title, .thumbnail-title .main-title { font-size: 3.1rem; }
+  .thumbnail-subtitle .subtitle-text { font-size: 1.8rem; }
+}

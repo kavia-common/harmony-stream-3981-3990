@@ -1,25 +1,30 @@
 /* Root & backgrounds */
 :root {
-  /* Figma Design colors */
+  /* Monochrome palette */
   --color-white: #fff;
-  --color-bg: var(--color-white);
+  --color-bg: #fff;
   --color-black: #000;
-  --color-green-main: #1ed760;
-  --color-title: #000;
-  --color-subtitle: #000;
-  --color-desktop-tablet: #000;
-  --color-grey-dark: #171717;
+  --color-title: #111;
+  --color-subtitle: #222;
+  --color-desktop-tablet: #333;
+  --color-grey-dark: #111;
   --color-free-bar-bg: #000;
   --color-free-bar-text: #fff;
-  --figma-blue: #1abcfe;
-  --figma-green: #0acf83;
-  --figma-red: #ff7262;
-  --figma-orange: #f24e1e;
-  --figma-purple: #a259ff;
-
-  /* Shadows (for figma cards etc.) */
-  --figma-card-shadow: 0 66px 100px 0 #3a3a3a20;
+  --figma-icon-fill: #eee;
+  --figma-card-shadow: 0 66px 100px 0 #1112;
   --figma-card-radius: 12px;
+}
+
+/* Theme override for dark mode (uses global data-theme) */
+[data-theme="dark"] .thumbnail-root {
+  --color-bg: #111;
+  --color-title: #fff;
+  --color-subtitle: #ddd;
+  --color-desktop-tablet: #bbb;
+  --color-grey-dark: #eee;
+  --color-free-bar-bg: #fff;
+  --color-free-bar-text: #000;
+  --figma-icon-fill: #222;
 }
 
 /* Top-level container */
@@ -68,9 +73,9 @@
 .spotify-img-placeholder {
   width: 64px;
   height: 64px;
-  background: var(--color-green-main);
+  background: #000;
   border-radius: 50%;
-  box-shadow: 0 0 18px 0 rgba(30, 215, 96, 0.25);
+  box-shadow: 0 0 10px 0 #0003;
 }
 
 .thumbnail-logo-text .logo-main {
@@ -137,17 +142,17 @@
   margin-top: 28px;
   display: flex;
   align-items: center;
-  background: #fff;
+  background: #f9f9f9;
   border-radius: 12px;
-  box-shadow: 0 8px 36px 0 rgba(0,0,0,0.13);
+  box-shadow: 0 8px 36px 0 #1111;
   padding: 0 18px;
   min-height: 100px;
 }
 
 .figma-frame-bg {
-  background: #fff;
+  background: #ededed;
   border-radius: 32px;
-  box-shadow: 0 8px 36px 0 rgba(0,0,0,0.05);
+  box-shadow: 0 8px 36px 0 #1111;
   width: 104px;
   height: 104px;
   margin-right: 20px;
@@ -173,7 +178,7 @@
 .figma-files-plus {
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--color-grey-dark);
+  color: #444;
 }
 
 /* BG decorative vector */
@@ -183,8 +188,8 @@
   right: 0;
   width: 600px;
   height: 300px;
-  background: linear-gradient(110deg, #1ed760 80%, rgba(30,215,96,0.13) 100%);
-  opacity: 0.18;
+  background: linear-gradient(110deg, #bbb 70%, #fff 100%);
+  opacity: 0.11;
   z-index: 1;
   border-radius: 66px 300px 18px 111px;
 }

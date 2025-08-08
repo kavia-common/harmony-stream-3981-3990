@@ -53,12 +53,12 @@ function Thumbnail() {
               {/* Figma icon composition */}
               <div className="figma-svg-icons">
                 {/* Represented as colored SVG ellipses---see CSS */}
-                <svg width="48" height="48" viewBox="0 0 48 48">
-                  <ellipse cx="24" cy="10" rx="8.5" ry="8.5" style={{ fill: "var(--figma-blue)" }} />
-                  <ellipse cx="24" cy="38" rx="8.5" ry="8.5" style={{ fill: "var(--figma-green)" }} />
-                  <ellipse cx="39" cy="24" rx="8.5" ry="8.5" style={{ fill: "var(--figma-red)" }} />
-                  <ellipse cx="24" cy="24" rx="8.5" ry="8.5" style={{ fill: "var(--figma-orange)" }} />
-                  <ellipse cx="10" cy="24" rx="8.5" ry="8.5" style={{ fill: "var(--figma-purple)" }} />
+                <svg width="48" height="48" viewBox="0 0 48 48" aria-label="Figma monochrome icon">
+                  <ellipse cx="24" cy="10" rx="8.5" ry="8.5" style={{ fill: "var(--figma-icon-fill)" }} />
+                  <ellipse cx="24" cy="38" rx="8.5" ry="8.5" style={{ fill: "var(--figma-icon-fill)" }} />
+                  <ellipse cx="39" cy="24" rx="8.5" ry="8.5" style={{ fill: "var(--figma-icon-fill)" }} />
+                  <ellipse cx="24" cy="24" rx="8.5" ry="8.5" style={{ fill: "var(--figma-icon-fill)" }} />
+                  <ellipse cx="10" cy="24" rx="8.5" ry="8.5" style={{ fill: "var(--figma-icon-fill)" }} />
                 </svg>
               </div>
               <span className="figma-files-plus">+10 Screens</span>
